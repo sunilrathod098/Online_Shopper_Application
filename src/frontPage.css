@@ -1,0 +1,141 @@
+.header-row-1 {
+    background-color: #cac8c8;
+    padding: 15px;
+    font-family: arial;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bi-truck {
+    color: #000000;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: bold;
+}
+.header-row-1 span {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header-row-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    font-family: arial;
+    font-size: 20px;
+    padding: 40px;
+}
+
+.brand-title {
+    font-size: 35px;
+    font-weight: bold;
+    color: #000000;
+}
+
+nav span {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 18px;
+}
+
+.short-cuts {
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: space-between;
+}
+
+article {
+    background-color: #202020;
+    color: white;
+    padding: 15px;
+    font-family: arial;
+    font-size: 18px;
+    text-align: center;
+}
+.bi-lightning-fill{
+    color: gold;
+}
+
+main {
+    height: 450px;
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    margin-top: 10px;
+}
+
+.women-fashion {
+    background-image: url("../images/women_fashion.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+    opacity: 0.8;
+}
+.men-fashion {
+    background-image: url("../images/mens_fashion.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    opacity: 0.8;
+    font-weight: bold;
+}
+
+.kids-fashion {
+    background-image: url("../images/kids_fashion.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    opacity: 0.8;
+    font-weight: bold;
+}
+.main-title {
+    font-family: arial;
+    font-size: 70px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.btn-shop {
+    background-color: #ffffff;
+    padding: 10px;
+    width: 200px;
+    font-family: arial;
+    text-align: center;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 5px;
+}
+
+.women-fashion:hover,
+.men-fashion:hover,
+.kids-fashion:hover {
+    opacity: 1;
+    cursor: grab;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: bold;
+}
+
+.services .bi-truck,
+.bi-tag,
+.bi-lock,
+.bi-arrow-left-right {
+    color: #ff0000;
+}
