@@ -19,6 +19,11 @@
     padding-left: 10px;
     padding-right: 10px;
 }
+.span-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+}
 
 .header-row-2 {
     display: flex;
@@ -42,11 +47,47 @@ nav span {
     font-size: 18px;
 }
 
+
 .short-cuts {
     padding-left: 15px;
     padding-right: 15px;
     justify-content: space-between;
 }
+.search-container {
+    display: inline-block;
+    position: relative;
+}
+.search-icon {
+    font-size: 20px;
+    color: #000000;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.search-icon:hover{
+    color: #007bff;
+}
+.search-input {
+    position: absolute;
+    top: -5px;
+    right: 25px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+}
+.search-container:hover .search-input {
+    opacity: 1;
+    pointer-events: auto;
+}
+.search-input input {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    background-color: white;
+}
+
 
 article {
     background-color: #202020;
@@ -122,12 +163,17 @@ main {
     cursor: grab;
 }
 
+.btn-shop:hover {
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+}
 .services {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 20px;
-    margin-top: 20px;
-    font-size: 20px;
+    margin-top: 15px;
+    font-size: 18px;
     padding-left: 15px;
     padding-right: 15px;
     font-weight: bold;
@@ -138,4 +184,77 @@ main {
 .bi-lock,
 .bi-arrow-left-right {
     color: #ff0000;
+}
+
+footer {
+    background-color: #0f0f0f;
+    color: white;
+    font-family: arial;
+    padding: 10px;
+}
+
+.footer-row-1 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+.email {
+    background-color: rgb(135, 131, 131, 0.653);
+    border: 1px solid rgb(95, 94, 94);
+    padding: 15px;
+    display: inline-block;
+    width: 300px;
+    text-align: left;
+    font-size: 20px;
+}
+.subscribe {
+    background-color: rgb(135, 131, 131, 0.653);
+    border: 1px solid rgb(95, 94, 94);
+    padding: 15px;
+    width: 150px;
+    font-size: 20px;
+    display: inline-block;
+    color: white;
+    margin-left: 10px;
+}
+.subscribe:hover {
+    background-color: #000000;
+    cursor: pointer;
+}
+.email:hover{
+    background-color: #3b3b3b;
+    cursor: pointer;
+}
+.footer-row-2 {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+    padding: 20px;
+}
+
+.service-title {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    display: inline-block;
+}
+.service-title~span {
+    display: block;
+    padding-bottom: 10px;
+}
+aside span {
+    padding-right: 5px;
+}
+.footer-brand-title {
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    display: block;
 }
